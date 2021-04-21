@@ -129,7 +129,7 @@ def main():
     parser.add_argument('-e', '--edit', nargs='*', type=str, default='not_set', help='Edit to-do list')
     parser.add_argument('-i', '--indent-spaces', type=int, help='Number of spaces before each line')
     parser.add_argument('-d', '--no-description', action='store_true', help='Do not print description')
-    parser.add_argument('-s', '--no-section', action='store_true', help='Do not print description')
+    parser.add_argument('-s', '--no-section', action='store_true', help='Do not print section header')
     parser.add_argument('-c', '--color', nargs=3, default=(15, 1, 2), help='Colors for section, to-do, done')
     args = parser.parse_args()
     edit = args.edit != 'not_set'
