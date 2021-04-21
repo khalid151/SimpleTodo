@@ -148,7 +148,7 @@ def main():
                 args.edit = args.todo_list
             else:
                 args.edit = args.edit[0]
-            run([env['EDITOR'], args.edit, '-c', 'Goyo'])
+            run([env['EDITOR'], args.edit])
             return
 
     if args.indent_spaces is None and len(todo_items.keys()) == 1:
